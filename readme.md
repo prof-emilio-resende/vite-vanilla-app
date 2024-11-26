@@ -157,3 +157,55 @@ cd src
 mkdir login
 touch index.html
 ```
+[conteudo]()
+
+# 5. Crie a nova página src/signup/index.html e adicione o conteúdo
+
+```bash
+cd src
+mkdir login
+touch index.html
+```
+[conteudo]()
+
+# 6. Adicionando navegação entre as telas
+
+Agora que criamos duas p&aacute;ginas, vamos implementar a navegação entre elas:
+
+## criando a função de navegação
+```typescript
+export function navegar(path: string): void {
+    window.location.href=path;
+}
+```
+> Essa função realiza a navegação conforme parâmetro de entrada (sem validação)
+
+## fazendo a chamada da nova função no HTML
+```html
+<!-- ... -->
+<button onclick="navegar('/signup/')" ... >
+<!-- ... -->
+```
+
+> Porém é necessário fazer a associação da nova função ao objeto window, para que essa função possa ser usada
+```javascript
+  window.navegar = navegar;
+```
+
+Após essa chamada, o compilador do typescript vai apontar que não existe a função navegar prevista na definição do objeto window. Vamos fazer a estensão dessa interface para que o erro pare de aparecer:
+
+## Crie um novo arquivo global.d.ts
+```bash
+touch global.d.ts
+```
+
+```typescript
+// global.d.ts
+export {};
+
+declare global {
+    interface Window {
+        navegar: (path: string) => void;
+    }
+}
+```
