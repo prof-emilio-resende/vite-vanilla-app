@@ -157,20 +157,20 @@ cd src
 mkdir login
 touch index.html
 ```
-[conteudo]()
+[conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/login/index.html)
 
 # 5. Crie a nova página src/signup/index.html e adicione o conteúdo
 
 ```bash
 cd src
-mkdir login
+mkdir signup
 touch index.html
 ```
-[conteudo]()
+[conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/signup/index.html)
 
 # 6. Adicionando navegação entre as telas
 
-Agora que criamos duas p&aacute;ginas, vamos implementar a navegação entre elas:
+Agora que criamos duas páginas, vamos implementar a navegação entre elas:
 
 ## criando a função de navegação
 ```typescript
@@ -209,3 +209,14 @@ declare global {
     }
 }
 ```
+
+# 7. Crie a nova página src/todo/index.html e adicione o conteúdo
+
+```bash
+cd src
+mkdir todo
+touch index.html
+```
+[conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/todo/index.html)
+
+
