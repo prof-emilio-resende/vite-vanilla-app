@@ -219,4 +219,11 @@ touch index.html
 ```
 [conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/todo/index.html)
 
+# 8. Crie a nova página src/todo/create/index.html e adicione o conteúdo
 
+```bash
+cd src/todo
+mkdir create
+touch index.html
+```
+[conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/todo/create/index.html)

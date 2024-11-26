@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="flex flex-col justify-center">
+        <h1 class="text-3xl font-bold text-center leading-10 pt-10 pb-10">
+            TODO IT
+        </h1>
+        <div class="flex flex-col justify-center m-5 space-y-5">
+            <h2 class="text-2xl font-bold text-center leading-5 pb-2">Novo Item</h2>
+            <h3 class="text-xl text-center leading-5 pb-5">
+                Digite um t&iacute;tulo e uma descri&ccedil;&atilde;o
+            </h3>
+            <form class="flex flex-col justify-center space-y-5">
+                <input type="text" placeholder="t&iacute;tulo da atividade"
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" />
+                <textarea placeholder="Descri&ccedil;&atilde;o detalhada da atividade" class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"></textarea>
+
+                <button type="button" onclick="navegar('/todo/')"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-slate-700 text-slate-100 hover:bg-slate-700/90 h-10 px-4 py-2">
+                    Criar
+                </button>
+                <button onclick="navegar('/todo/')" type="button"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-red-700 text-slate-100 hover:bg-red-700/90 h-10 px-4 py-2">
+                    Cancelar
+                </button>
+            </form>
+        </div>
+        <div
+            class="fixed bottom-0 left-0 z-50 h-16 border-t-solid border-t-slate-400 border-t group inline-flex w-full items-center justify-center text-center px-4 py-2">
+            <span class="text-sm mt-10">
+                Conhe&ccedil;a nossa Pol&iacute;tica de Privacidade
+            </span>
+        </div>
+    </div>
+</body>
+<script type="module" src="../../main.ts"></script>
+
+</html>
