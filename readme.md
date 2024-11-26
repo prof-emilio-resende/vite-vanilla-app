@@ -244,3 +244,10 @@ touch todo.ts
 <div id="todoList" class="flex flex-col justify-center align-middle items-center space-y-5 w-full"></div>
 <!-- ... -->
 ```
+
+# 10. Criar e remover itens
+
+Para finalizar, vamos ajustar nosso app para ser capaz de submeter os dados do formulário e criar um novo item em nossa TODO API além de remover um item.
+
+> vamos trabalhar com diversos arquivos:
+> global.d.ts main.ts todo.entity.ts todo.ts index.html
