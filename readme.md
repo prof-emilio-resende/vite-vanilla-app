@@ -227,3 +227,20 @@ mkdir create
 touch index.html
 ```
 [conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/todo/create/index.html)
+
+# 9. Carregando listagem de tarefas de uma API
+
+Para prover um comportamento especializado para a página de TODO, vamos criar um novo arquivo .ts (todo.ts) e vincular ao carregamento de scripts da página todo/index.html
+
+```bash
+touch todo.ts
+```
+
+[conteudo](https://github.com/prof-emilio-resende/vite-vanilla-app/blob/main/src/todo.ts)
+
+> Altere o index.html para carregar o novo script
+```html
+<!-- ... -->
+<div id="todoList" class="flex flex-col justify-center align-middle items-center space-y-5 w-full"></div>
+<!-- ... -->
+```
